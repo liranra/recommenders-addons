@@ -255,7 +255,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
       "hot_values", TensorShape({size, 1}), &values));
 
     auto keys_data = keys->flat<K>();
-    auto values_data = values->matrix<V>();
+    auto values_data = values->matrix<int>();
     int64 i = 0;
 
     for (auto it = lt.begin(); it != lt.end(); ++it, ++i) {
