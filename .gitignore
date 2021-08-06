@@ -23,3 +23,20 @@ bazel-genfiles
 
 .bazelrc
 
+FeatureServing
+/.idea/
+CmakeLists.txt
+/cmake-build-debug/
+log.txt
+find.py
+file.txt
+dir.txt
+pkid_mapping.json
+pk.txt
+test.py
+external
+external.tar.gz
+jce_src
+include
+laplace
+bazel*
