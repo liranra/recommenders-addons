@@ -1,0 +1,1 @@
+{"dataset_names": ["movie_lens"], "original_fname": "ml-100k.zip", "url_info": {"checksum": "50d2a982c66986937beb9ffb3aa76efe955bf3d5c6b761f4e3a7cd717c6a3229", "size": 4924029}, "urls": ["http://files.grouplens.org/datasets/movielens/ml-100k.zip"]}

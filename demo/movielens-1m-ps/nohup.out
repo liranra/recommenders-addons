@@ -1,0 +1,4372 @@
+result
+root      5463  5454  0 11:17 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:17:57.482742: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:17:57.487046: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:17:57.487157: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x48d1d30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:17:57.487182: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:17:57.488592: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:17:57.488609: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:17:57.489626: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:17:58.624680: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:17:58.646558: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:17:58.646684: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x513acd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:17:58.646722: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:17:58.648622: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:17:58.648653: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:17:58.651075: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:17:59.605005: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:17:59.616586: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:17:59.616985: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x526ebe0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:17:59.617023: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:17:59.618555: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:17:59.618583: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:17:59.619159: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:18:00.592338: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:18:00.596887: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:18:00.597004: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4fe1be0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:18:00.597041: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:18:00.598424: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:18:00.598447: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:18:00.599440: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+2021-08-03 11:18:09.040218: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+2021-08-03 11:18:11.251740: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 206, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 423, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 71, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 64, in gcs_listdir
+    if is_gcs_disabled() or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movie_lens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 206, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 423, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 71, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 64, in gcs_listdir
+    if is_gcs_disabled() or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movie_lens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+result
+root      5726  5717  0 11:19 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:20:02.656953: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:20:02.661743: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:20:02.661905: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x455d850 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:20:02.661945: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:20:02.663685: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:20:02.663726: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:20:02.664783: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:20:03.725923: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:20:03.730386: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:20:03.730500: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x42655d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:20:03.730532: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:20:03.732241: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:20:03.732267: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:20:03.733350: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:20:04.267798: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:20:04.272063: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:20:04.272180: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x515c740 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:20:04.272213: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:20:04.273680: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:20:04.273708: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:20:04.274671: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 52, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 302, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 170, in builder
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- cos_e
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- dummy_dataset_shared_generator
+	- dummy_mnist
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- gap
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit_tifu
+	- resisc45
+	- rock_paper_scissors
+	- rock_you
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- wider_face
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:20:05.250028: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:20:05.254568: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:20:05.254679: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4204740 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:20:05.254718: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:20:05.256104: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:20:05.256131: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:20:05.257082: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 52, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 302, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 170, in builder
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- cos_e
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- dummy_dataset_shared_generator
+	- dummy_mnist
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- gap
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit_tifu
+	- resisc45
+	- rock_paper_scissors
+	- rock_you
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- wider_face
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+result
+root      5983  5974  0 11:20 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:20:59.561360: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:20:59.565685: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:20:59.565807: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x54c4dd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:20:59.565844: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:20:59.567388: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:20:59.567413: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:20:59.568444: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:21:00.656860: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:21:00.677909: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:21:00.678058: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5929d00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:21:00.678122: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:21:00.679685: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:21:00.679736: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:21:00.681837: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:21:02.150476: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:21:02.160740: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:21:02.160863: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x493dc50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:21:02.160883: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:21:02.162635: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:21:02.162663: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:21:02.163561: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 382, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 366, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 384, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 375, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+  File "/usr/local/lib/python3.6/site-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 382, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset Failed to construct dataset movie_lensDataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+ not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:21:03.196335: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:21:03.200651: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:21:03.200780: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x51e9c10 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:21:03.200813: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:21:03.202217: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:21:03.202242: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:21:03.203190: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 382, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 366, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 384, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 375, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+  File "/usr/local/lib/python3.6/site-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 382, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset Failed to construct dataset movie_lensDataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+ not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+result
+root      6246  6237  0 11:23 pts/0    00:00:00 grep movielens-
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 22, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 63, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 22, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 63, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+ok
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 22, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 63, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 22, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 63, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+result
+root      6347  6338  0 11:23 pts/0    00:00:00 grep movielens-
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 51, in <module>
+    from tensorflow_datasets import __init__py3 as api
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__py3.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 21, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 59, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 51, in <module>
+    from tensorflow_datasets import __init__py3 as api
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__py3.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 21, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 59, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+ok
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 51, in <module>
+    from tensorflow_datasets import __init__py3 as api
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__py3.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 21, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 59, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 4, in <module>
+    import tensorflow_datasets as tfds
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__.py", line 51, in <module>
+    from tensorflow_datasets import __init__py3 as api
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/__init__py3.py", line 43, in <module>
+    from tensorflow_datasets.core import tf_compat
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/__init__.py", line 21, in <module>
+    tf_compat.ensure_tf_install()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/tf_compat.py", line 59, in ensure_tf_install
+    "This version of TensorFlow Datasets requires TensorFlow "
+ImportError: This version of TensorFlow Datasets requires TensorFlow version >= 2.1.0; Detected an installation of version 1.15.2. Please upgrade TensorFlow to proceed.
+
+Usage:
+ kill [options] <pid|name> [...]
+
+Options:
+ -a, --all              do not restrict the name-to-pid conversion to processes
+                        with the same uid as the present process
+ -s, --signal <sig>     send specified signal
+ -q, --queue <sig>      use sigqueue(2) rather than kill(2)
+ -p, --pid              print pids without signaling them
+ -l, --list [=<signal>] list signal names, or convert one to a name
+ -L, --table            list signal names and numbers
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see kill(1).
+result
+root      6448  6439  0 11:23 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:02.016649: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:02.021237: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:02.021380: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5192dd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:02.021410: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:02.023008: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:02.023031: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:02.024133: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:03.123936: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:03.134151: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:03.134493: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5337db0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:03.134539: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:03.136531: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:03.136561: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:03.137259: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:04.373444: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:04.379626: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:04.379763: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x515d7e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:04.379789: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:04.381525: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:04.381554: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:04.382359: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:05.303991: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:05.308561: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:05.308679: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5321780 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:05.308722: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:05.310126: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:05.310149: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:05.311122: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+2021-08-03 11:24:12.755012: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+2021-08-03 11:24:16.438148: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+result
+root      6711  6702  0 11:24 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:37.714582: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:37.718897: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:37.719014: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4c8f400 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:37.719049: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:37.720409: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:37.720433: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:37.721426: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:38.829255: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:38.847748: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:38.847868: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x42d2400 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:38.847890: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:38.849466: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:38.849504: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:38.850862: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:39.837189: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:39.847185: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:39.847308: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4654470 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:39.847346: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:39.849101: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:39.849136: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:39.849796: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 53, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 336, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 209, in builder
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:24:40.833566: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:24:40.837935: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:24:40.838050: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x48f5470 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:24:40.838084: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:24:40.839621: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:24:40.839649: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:24:40.840521: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 53, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 336, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 209, in builder
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movie_lens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- amazon_us_reviews
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- image_label_folder
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_subset
+	- imagenet_resized
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mnist
+	- mnist_corrupted
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- opinosis
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+result
+root      6974  6965  0 11:26 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:26:39.796364: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:26:39.800696: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:26:39.800816: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x465ceb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:26:39.800852: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:26:39.802373: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:26:39.802396: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:26:39.803262: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:26:40.841377: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:26:40.851416: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:26:40.851823: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x3ea1eb0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:26:40.851854: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:26:40.853376: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:26:40.853395: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:26:40.853932: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:26:41.799456: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:26:41.803767: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:26:41.803884: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5ab79d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:26:41.803912: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:26:41.805404: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:26:41.805428: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:26:41.806489: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+W0803 11:26:41.810439 139777904748352 movielens.py:451] The handle "movie_lens" for the MovieLens dataset is deprecated. Prefer using "movielens" instead.
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:26:42.795586: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:26:42.800148: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:26:42.800260: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5a329d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:26:42.800291: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:26:42.801726: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:26:42.801747: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:26:42.802706: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+W0803 11:26:42.806956 140525138663232 movielens.py:451] The handle "movie_lens" for the MovieLens dataset is deprecated. Prefer using "movielens" instead.
+2021-08-03 11:26:51.175571: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+2021-08-03 11:26:53.199863: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+result
+root      7226  7217  0 11:27 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:27:18.105526: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:27:18.109962: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:27:18.110097: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x3f84da0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:27:18.110126: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:27:18.111646: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:27:18.111670: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:27:18.112625: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:27:19.182905: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+ok
+2021-08-03 11:27:19.187518: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:27:19.187655: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4896f00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:27:19.187687: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:27:19.189241: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:27:19.189264: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:27:19.190338: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:27:20.149470: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:27:20.153806: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:27:20.153915: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4efa9d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:27:20.153947: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:27:20.155417: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:27:20.155440: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:27:20.156435: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:27:21.136991: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:27:21.141235: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:27:21.141350: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4f0d9d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:27:21.141374: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:27:21.142816: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:27:21.142841: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:27:21.143893: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+2021-08-03 11:27:31.046115: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+2021-08-03 11:27:33.902971: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 420, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 204, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 417, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 67, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 60, in gcs_listdir
+    if _is_gcs_disabled or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movielens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movielens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 379, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 422, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 413, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 420, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 204, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 417, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 67, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 60, in gcs_listdir
+    if _is_gcs_disabled or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movielens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movielens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 379, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 422, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 413, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+result
+root      7489  7480  0 11:31 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:31:55.956706: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:31:55.961288: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:31:55.961399: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x47502e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:31:55.961427: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:31:55.962961: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:31:55.962989: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:31:55.963941: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:31:57.280082: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:31:57.285027: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:31:57.285179: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4495380 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:31:57.285216: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:31:57.286788: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:31:57.286816: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:31:57.287896: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:31:58.479444: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:31:58.486054: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:31:58.486209: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5132c90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:31:58.486250: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:31:58.488065: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:31:58.488104: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:31:58.489192: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movielens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movielens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+  File "/usr/local/lib/python3.6/site-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset Failed to construct dataset movielensDataset movielens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+ not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:31:59.437335: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:31:59.441973: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:31:59.442096: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5b06c90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:31:59.442128: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:31:59.443637: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:31:59.443661: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:31:59.444743: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset movielens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movielens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+  File "/usr/local/lib/python3.6/site-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 212, in builder_cls
+    raise DatasetNotFoundError(name)
+tensorflow_datasets.core.registered.DatasetNotFoundError: Dataset Failed to construct dataset movielensDataset movielens not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+ not found. Available datasets:
+	- abstract_reasoning
+	- aeslc
+	- aflw2k3d
+	- ai2_arc
+	- amazon_us_reviews
+	- anli
+	- arc
+	- bair_robot_pushing_small
+	- beans
+	- big_patent
+	- bigearthnet
+	- billsum
+	- binarized_mnist
+	- binary_alpha_digits
+	- blimp
+	- c4
+	- caltech101
+	- caltech_birds2010
+	- caltech_birds2011
+	- cars196
+	- cassava
+	- cats_vs_dogs
+	- celeb_a
+	- celeb_a_hq
+	- cfq
+	- chexpert
+	- cifar10
+	- cifar100
+	- cifar10_1
+	- cifar10_corrupted
+	- citrus_leaves
+	- cityscapes
+	- civil_comments
+	- clevr
+	- clinc_oos
+	- cmaterdb
+	- cnn_dailymail
+	- coco
+	- coil100
+	- colorectal_histology
+	- colorectal_histology_large
+	- common_voice
+	- cos_e
+	- cosmos_qa
+	- covid19sum
+	- crema_d
+	- curated_breast_imaging_ddsm
+	- cycle_gan
+	- deep_weeds
+	- definite_pronoun_resolution
+	- dementiabank
+	- diabetic_retinopathy_detection
+	- div2k
+	- dmlab
+	- downsampled_imagenet
+	- dsprites
+	- dtd
+	- duke_ultrasound
+	- emnist
+	- eraser_multi_rc
+	- esnli
+	- eurosat
+	- fashion_mnist
+	- flic
+	- flores
+	- food101
+	- forest_fires
+	- fuss
+	- gap
+	- geirhos_conflict_stimuli
+	- german_credit_numeric
+	- gigaword
+	- glue
+	- groove
+	- higgs
+	- horses_or_humans
+	- i_naturalist2017
+	- imagenet2012
+	- imagenet2012_corrupted
+	- imagenet2012_real
+	- imagenet2012_subset
+	- imagenet_a
+	- imagenet_resized
+	- imagenet_v2
+	- imagenette
+	- imagewang
+	- imdb_reviews
+	- irc_disentanglement
+	- iris
+	- kitti
+	- kmnist
+	- lfw
+	- librispeech
+	- librispeech_lm
+	- libritts
+	- ljspeech
+	- lm1b
+	- lost_and_found
+	- lsun
+	- malaria
+	- math_dataset
+	- mctaco
+	- mnist
+	- mnist_corrupted
+	- movie_lens
+	- movie_rationales
+	- moving_mnist
+	- multi_news
+	- multi_nli
+	- multi_nli_mismatch
+	- natural_questions
+	- newsroom
+	- nsynth
+	- nyu_depth_v2
+	- omniglot
+	- open_images_challenge2019_detection
+	- open_images_v4
+	- openbookqa
+	- opinion_abstracts
+	- opinosis
+	- opus
+	- oxford_flowers102
+	- oxford_iiit_pet
+	- para_crawl
+	- patch_camelyon
+	- pet_finder
+	- pg19
+	- places365_small
+	- plant_leaves
+	- plant_village
+	- plantae_k
+	- qa4mre
+	- quickdraw_bitmap
+	- reddit
+	- reddit_disentanglement
+	- reddit_tifu
+	- resisc45
+	- robonet
+	- rock_paper_scissors
+	- rock_you
+	- samsum
+	- savee
+	- scan
+	- scene_parse150
+	- scicite
+	- scientific_papers
+	- shapes3d
+	- smallnorb
+	- snli
+	- so2sat
+	- speech_commands
+	- squad
+	- stanford_dogs
+	- stanford_online_products
+	- starcraft_video
+	- stl10
+	- sun397
+	- super_glue
+	- svhn_cropped
+	- ted_hrlr_translate
+	- ted_multi_translate
+	- tedlium
+	- tf_flowers
+	- the300w_lp
+	- tiny_shakespeare
+	- titanic
+	- trivia_qa
+	- uc_merced
+	- ucf101
+	- vctk
+	- vgg_face2
+	- visual_domain_decathlon
+	- voc
+	- voxceleb
+	- voxforge
+	- waymo_open_dataset
+	- web_questions
+	- wider_face
+	- wiki40b
+	- wikihow
+	- wikipedia
+	- wikipedia_toxicity_subtypes
+	- winogrande
+	- wmt14_translate
+	- wmt15_translate
+	- wmt16_translate
+	- wmt17_translate
+	- wmt18_translate
+	- wmt19_translate
+	- wmt_t2t_translate
+	- wmt_translate
+	- wordnet
+	- xnli
+	- xsum
+	- yelp_polarity_reviews
+Check that:
+    - if dataset was added recently, it may only be available
+      in `tfds-nightly`
+    - the dataset name is spelled correctly
+    - dataset class defines all base class abstract methods
+    - dataset class is not in development, i.e. if IN_DEVELOPMENT=True
+    - the module defining the dataset class is imported
+
+result
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:32:35.328264: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:32:35.332639: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:32:35.332763: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x3d86390 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:32:35.332795: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:32:35.334300: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:32:35.334327: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:32:35.335362: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:32:36.537042: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:32:36.541560: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:32:36.541698: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5560170 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:32:36.541733: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:32:36.543205: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:32:36.543230: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:32:36.544116: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:32:37.476543: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:32:37.482324: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:32:37.482437: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4cb9de0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:32:37.482457: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:32:37.483980: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:32:37.484010: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:32:37.484556: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:32:38.418767: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:32:38.423087: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:32:38.423205: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x4a21de0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:32:38.423252: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:32:38.424603: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:32:38.424626: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:32:38.425682: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+2021-08-03 11:32:48.859916: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+2021-08-03 11:32:49.367099: W tensorflow/core/platform/cloud/google_auth_provider.cc:178] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "Not found: Could not locate the credentials file.". Retrieving token from GCE failed with "Aborted: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Couldn't resolve host 'metadata'".
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 206, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 423, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 71, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 64, in gcs_listdir
+    if is_gcs_disabled() or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movie_lens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker1: train[50%:99%]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 399, in try_reraise
+    yield
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_builder.py", line 206, in __init__
+    self.info.initialize_from_bucket()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/dataset_info.py", line 423, in initialize_from_bucket
+    data_files = gcs_utils.gcs_dataset_info_files(self.full_name)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 71, in gcs_dataset_info_files
+    return gcs_listdir(posixpath.join(GCS_DATASET_INFO_DIR, dataset_dir))
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/gcs_utils.py", line 64, in gcs_listdir
+    if is_gcs_disabled() or not tf.io.gfile.exists(root_dir):
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/lib/io/file_io.py", line 280, in file_exists_v2
+    pywrap_tensorflow.FileExists(compat.as_bytes(path))
+tensorflow.python.framework.errors_impl.AbortedError: All 10 retry attempts failed. The last failure: Unavailable: Error executing an HTTP request: libcurl code 77 meaning 'Problem with the SSL CA cert (path? access rights?)', error details: error setting certificate verify locations:
+  CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: none
+	 when reading metadata of gs://tfds-data/dataset_info/movie_lens/1m-ratings/0.1.0
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "movielens-1m-ps.py", line 211, in <module>
+    tf.compat.v1.app.run()
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_core/python/platform/app.py", line 40, in run
+    _run(main=main, argv=argv, flags_parser=_parse_flags_tolerate_undef)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 303, in run
+    _run_main(main, args)
+  File "/usr/local/lib/python3.6/site-packages/absl/app.py", line 251, in _run_main
+    sys.exit(main(argv))
+  File "movielens-1m-ps.py", line 204, in main
+    start_worker(task_id, cluster_config)
+  File "movielens-1m-ps.py", line 141, in start_worker
+    train_iter = trainer.read_batch()
+  File "movielens-1m-ps.py", line 44, in read_batch
+    ratings = tfds.load("movie_lens/1m-ratings", split=split)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/api_utils.py", line 69, in disallow_positional_args_dec
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 368, in load
+    dbuilder = builder(name, data_dir=data_dir, **builder_kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/registered.py", line 244, in builder
+    return builder_cls(name)(**builder_kwargs)
+  File "/usr/local/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 401, in try_reraise
+    reraise(*args, **kwargs)
+  File "/usr/local/lib/python3.6/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 392, in reraise
+    six.reraise(exc_type, exc_type(msg), exc_traceback)
+TypeError: __init__() missing 2 required positional arguments: 'op' and 'message'
+result
+root      8013  8004  0 11:42 pts/0    00:00:00 grep movielens-
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:42:05.085466: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:42:05.089827: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:42:05.089938: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x42f62e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:42:05.089964: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:42:05.091363: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:42:05.091381: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:42:05.092387: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2220
+ok
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:42:06.186889: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:42:06.205716: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:42:06.205847: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x45b31b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:42:06.205861: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:42:06.207402: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:42:06.207426: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:42:06.208027: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2221
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:42:07.181147: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-08-03 11:42:07.196221: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:42:07.196353: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5b5dc90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:42:07.196373: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:42:07.198050: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:42:07.198077: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:42:07.198862: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2231
+I0803 11:42:07.203048 140185260996416 dataset_info.py:358] Load dataset info from /home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0
+I0803 11:42:07.215928 140185260996416 dataset_builder.py:288] Reusing dataset movie_lens (/home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0)
+I0803 11:42:07.216178 140185260996416 dataset_builder.py:500] Constructing tf.data.Dataset for split train[50%:99%], from /home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/compat/v2_compat.py:68: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+2021-08-03 11:42:08.152790: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/data/util/random_seed.py:58: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0803 11:42:08.153299 140185260996416 deprecation.py:323] From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/data/util/random_seed.py:58: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+2021-08-03 11:42:08.157251: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494130000 Hz
+2021-08-03 11:42:08.157389: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5a85c90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-08-03 11:42:08.157420: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-08-03 11:42:08.158926: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job ps -> {0 -> localhost:2220, 1 -> localhost:2221}
+2021-08-03 11:42:08.158956: I tensorflow/core/distributed_runtime/rpc/grpc_channel.cc:258] Initialize GrpcChannelCache for job worker -> {0 -> localhost:2230, 1 -> localhost:2231}
+2021-08-03 11:42:08.159930: I tensorflow/core/distributed_runtime/rpc/grpc_server_lib.cc:365] Started server with target: grpc://localhost:2230
+WARNING:tensorflow:From movielens-1m-ps.py:65: The name tf.keras.initializers.RandomNormal is deprecated. Please use tf.compat.v1.keras.initializers.RandomNormal instead.
+
+W0803 11:42:08.166749 140185260996416 module_wrapper.py:139] From movielens-1m-ps.py:65: The name tf.keras.initializers.RandomNormal is deprecated. Please use tf.compat.v1.keras.initializers.RandomNormal instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0803 11:42:08.167036 140185260996416 deprecation.py:506] From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+I0803 11:42:08.168439 139943254406976 dataset_info.py:358] Load dataset info from /home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0
+I0803 11:42:08.185372 139943254406976 dataset_builder.py:288] Reusing dataset movie_lens (/home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0)
+I0803 11:42:08.185636 139943254406976 dataset_builder.py:500] Constructing tf.data.Dataset for split train[0%:49%], from /home/recommenders-addons/demo/movielens-1m-ps/ft_local/tensorflow_datasets/movie_lens/1m-ratings/0.1.0
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_recommenders_addons/dynamic_embedding/python/ops/dynamic_embedding_ops.py:340: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0803 11:42:08.261087 140185260996416 deprecation.py:506] From /usr/local/lib/python3.6/site-packages/tensorflow_recommenders_addons/dynamic_embedding/python/ops/dynamic_embedding_ops.py:340: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+INFO:tensorflow:Graph was finalized.
+I0803 11:42:08.896356 140185260996416 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Waiting for model to be ready.  Ready_for_local_init_op:  Variables not initialized: dense/kernel, dense/bias, dense_1/kernel, dense_1/bias, dense_2/kernel, dense_2/bias, global_step, beta1_power, beta2_power, dense/kernel/Adam, dense/kernel/Adam_1, dense/bias/Adam, dense/bias/Adam_1, dense_1/kernel/Adam, dense_1/kernel/Adam_1, dense_1/bias/Adam, dense_1/bias/Adam_1, dense_2/kernel/Adam, dense_2/kernel/Adam_1, dense_2/bias/Adam, dense_2/bias/Adam_1, ready: None
+I0803 11:42:08.969605 140185260996416 session_manager.py:436] Waiting for model to be ready.  Ready_for_local_init_op:  Variables not initialized: dense/kernel, dense/bias, dense_1/kernel, dense_1/bias, dense_2/kernel, dense_2/bias, global_step, beta1_power, beta2_power, dense/kernel/Adam, dense/kernel/Adam_1, dense/bias/Adam, dense/bias/Adam_1, dense_1/kernel/Adam, dense_1/kernel/Adam_1, dense_1/bias/Adam, dense_1/bias/Adam_1, dense_2/kernel/Adam, dense_2/kernel/Adam_1, dense_2/bias/Adam, dense_2/bias/Adam_1, ready: None
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/data/util/random_seed.py:58: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+W0803 11:42:09.140009 139943254406976 deprecation.py:323] From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/data/util/random_seed.py:58: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+WARNING:tensorflow:From movielens-1m-ps.py:65: The name tf.keras.initializers.RandomNormal is deprecated. Please use tf.compat.v1.keras.initializers.RandomNormal instead.
+
+W0803 11:42:09.151418 139943254406976 module_wrapper.py:139] From movielens-1m-ps.py:65: The name tf.keras.initializers.RandomNormal is deprecated. Please use tf.compat.v1.keras.initializers.RandomNormal instead.
+
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0803 11:42:09.151707 139943254406976 deprecation.py:506] From /usr/local/lib/python3.6/site-packages/tensorflow_core/python/keras/initializers.py:143: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+WARNING:tensorflow:From /usr/local/lib/python3.6/site-packages/tensorflow_recommenders_addons/dynamic_embedding/python/ops/dynamic_embedding_ops.py:340: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+W0803 11:42:09.208693 139943254406976 deprecation.py:506] From /usr/local/lib/python3.6/site-packages/tensorflow_recommenders_addons/dynamic_embedding/python/ops/dynamic_embedding_ops.py:340: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+INFO:tensorflow:Graph was finalized.
+I0803 11:42:09.828942 139943254406976 monitored_session.py:240] Graph was finalized.
+INFO:tensorflow:Running local_init_op.
+I0803 11:42:09.933868 139943254406976 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0803 11:42:09.954950 139943254406976 session_manager.py:502] Done running local_init_op.
+2021-08-03 11:42:10.227824: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.228368: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.229104: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.229378: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.230152: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.230212: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.230867: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.231213: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.231462: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.231808: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.232061: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:10.232397: I ./tensorflow_recommenders_addons/dynamic_embedding/core/kernels/lookup_impl/lookup_table_op_cpu.h:143] HashTable on CPU is created on optimized mode: K=x, V=f, DIM=32, init_size=8192
+2021-08-03 11:42:20.227649: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 114966 of 1000000
+2021-08-03 11:42:30.227647: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 229087 of 1000000
+INFO:tensorflow:Running local_init_op.
+I0803 11:42:39.073884 140185260996416 session_manager.py:500] Running local_init_op.
+INFO:tensorflow:Done running local_init_op.
+I0803 11:42:39.101616 140185260996416 session_manager.py:502] Done running local_init_op.
+2021-08-03 11:42:40.227676: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 341447 of 1000000
+2021-08-03 11:42:49.443001: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 87523 of 1000000
+2021-08-03 11:42:50.228087: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 428536 of 1000000
+2021-08-03 11:42:57.274480: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:195] Shuffle buffer filled.
+2021-08-03 11:42:59.443089: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 171621 of 1000000
+2021-08-03 11:43:09.443073: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 242180 of 1000000
+2021-08-03 11:43:19.443054: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 312973 of 1000000
+2021-08-03 11:43:29.443163: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 383853 of 1000000
+2021-08-03 11:43:39.442997: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:145] Filling up shuffle buffer (this may take a while): 454517 of 1000000
+2021-08-03 11:43:44.467912: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:195] Shuffle buffer filled.
+2021-08-03 11:43:57.226740: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139778636973299306
+2021-08-03 11:43:57.227231: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139778636973299306
+ps_list:  ['localhost:2220', 'localhost:2221']
+worker_list:  ['localhost:2230', 'localhost:2231']
+worker config {'cluster': {'ps': ['localhost:2220', 'localhost:2221'], 'worker': ['localhost:2230', 'localhost:2231']}}
+dataset split, worker0: train[0%:49%]
+[worker0]step100:	loss=1.8163	 size=3020
+[worker0]step200:	loss=1.1228	 size=4081
+[worker0]step300:	loss=1.5238	 size=4646
+[worker0]step400:	loss=1.3382	 size=5003
+[worker0]step500:	loss=1.5612	 size=5221
+[worker0]step600:	loss=0.9345	 size=5407
+[worker0]step700:	loss=1.1774	 size=5544
+[worker0]step800:	loss=1.0227	 size=5649
+[worker0]step900:	loss=0.8752	 size=5725
+[worker0]step1000:	loss=1.2666	 size=5784
+[worker0]step1100:	loss=1.3802	 size=5828
+[worker0]step1200:	loss=0.9859	 size=5860
+[worker0]step1300:	loss=1.1909	 size=5897
+[worker0]step1400:	loss=1.6175	 size=5917
+[worker0]step1500:	loss=0.9945	 size=5932
+[worker0]step1600:	loss=1.2606	 size=5957
+[worker0]step1700:	loss=1.1135	 size=5968
+[worker0]step1800:	loss=0.9521	 size=5981
+[worker0]step1900:	loss=1.1077	 size=5988
+[worker0]step2000:	loss=0.9417	 size=5995
+[worker0]step2100:	loss=1.1634	 size=6000
+[worker0]step2200:	loss=1.3236	 size=6008
+[worker0]step2300:	loss=1.0796	 size=6014
+[worker0]step2400:	loss=1.3439	 size=6021
+[worker0]step2500:	loss=1.2632	 size=6026
+[worker0]step2600:	loss=1.1388	 size=6028
+[worker0]step2700:	loss=0.8042	 size=6031
+[worker0]step2800:	loss=1.1548	 size=6031
+[worker0]step2900:	loss=1.1872	 size=6032
+[worker0]step3000:	loss=1.1209	 size=6033
+[worker0]step3100:	loss=1.0310	 size=6033
+[worker0]step3200:	loss=1.3149	 size=6034
+[worker0]step3300:	loss=0.8304	 size=6036
+[worker0]step3400:	loss=1.0985	 size=6036
+[worker0]step3500:	loss=1.0385	 size=6037
+[worker0]step3600:	loss=1.1683	 size=6037
+[worker0]step3700:	loss=1.0166	 size=6039
+[worker0]step3800:	loss=0.9909	 size=6039
+[worker0]step3900:	loss=1.2310	 size=6039
+[worker0]step4000:	loss=1.3255	 size=6039
+[worker0]step4100:	loss=1.0033	 size=6039
+[worker0]step4200:	loss=1.1611	 size=6040
+[worker0]step4300:	loss=1.3663	 size=6040
+[worker0]step4400:	loss=0.8952	 size=6040
+[worker0]step4500:	loss=0.8226	 size=6040
+[worker0]step4600:	loss=0.9513	 size=6040
+[worker0]step4700:	loss=1.1150	 size=6040
+[worker0]step4800:	loss=0.9893	 size=6040
+[worker0]step4900:	loss=0.9989	 size=6040
+[worker0]step5000:	loss=1.0922	 size=6040
+[worker0]step5100:	loss=0.9960	 size=6040
+[worker0]step5200:	loss=1.1044	 size=6040
+[worker0]step5300:	loss=0.8675	 size=6040
+[worker0]step5400:	loss=1.0647	 size=6040
+[worker0]step5500:	loss=0.9545	 size=6040
+[worker0]step5600:	loss=1.0656	 size=6040
+[worker0]step5700:	loss=1.1452	 size=6040
+[worker0]step5800:	loss=1.0912	 size=6040
+[worker0]step5900:	loss=1.1240	 size=6040
+[worker0]step6000:	loss=1.0698	 size=6040
+[worker0]step6100:	loss=1.1580	 size=6040
+[worker0]step6200:	loss=0.6975	 size=6040
+[worker0]step6300:	loss=0.8170	 size=6040
+[worker0]step6400:	loss=0.8116	 size=6040
+[worker0]step6500:	loss=0.8657	 size=6040
+[worker0]step6600:	loss=0.9103	 size=6040
+[worker0]step6700:	loss=0.6558	 size=6040
+[worker0]step6800:	loss=0.8351	 size=6040
+[worker0]step6900:	loss=0.9299	 size=6040
+[worker0]step7000:	loss=0.9790	 size=6040
+[worker0]step7100:	loss=0.8861	 size=6040
+[worker0]step7200:	loss=0.9444	 size=6040
+[worker0]step7300:	loss=0.8248	 size=6040
+[worker0]step7400:	loss=0.8211	 size=6040
+[worker0]step7500:	loss=1.0659	 size=6040
+[worker0]step7600:	loss=0.8856	 size=6040
+[worker0]no more data!
+2021-08-03 11:44:36.025360: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025516: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025582: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025563: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025618: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025642: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025661: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.025705: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.026112: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
+2021-08-03 11:44:36.026205: W tensorflow/core/distributed_runtime/rpc/grpc_worker_service.cc:510] RecvTensor cancelled for 139208812181058518
