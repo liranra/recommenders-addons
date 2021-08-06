@@ -101,6 +101,7 @@ class CuckooHashTable(LookupInterface):
       self._shared_name = "table_%d" % (ops.uid(),)
     super(CuckooHashTable, self).__init__(key_dtype, value_dtype)
 
+    # 这里创建了table，交给了_resource_handle。
     self._resource_handle = self._create_resource()
     if checkpoint:
       _ = CuckooHashTable._Saveable(self, name)
@@ -255,6 +256,7 @@ class CuckooHashTable(LookupInterface):
           )
     return (values, exists) if return_exists else values
 
+  # 落实到inset上
   def insert(self, keys, values, name=None):
     """Associates `keys` with `values`.
 
@@ -281,6 +283,8 @@ class CuckooHashTable(LookupInterface):
       values = ops.convert_to_tensor(values, self._value_dtype, name="values")
       with ops.colocate_with(self.resource_handle):
         # pylint: disable=protected-access
+        # insert又落实到cuckoo_hash_table_insert这个op上。所以在这里可以得到某个ps上的hot key
+        # 但是需要了解一下模型dump的逻辑。
         op = cuckoo_ops.tfra_cuckoo_hash_table_insert(self.resource_handle,
                                                       keys, values)
     return op

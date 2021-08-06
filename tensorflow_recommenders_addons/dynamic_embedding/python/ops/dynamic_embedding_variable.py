@@ -260,6 +260,10 @@ class Variable(trackable.TrackableResource):
     scope_name = self.name.split("/")[-1]
     with ops.name_scope(scope_name, "DynamicEmbedding_Variable"):
       with ops.colocate_with(None, ignore_existing=True):
+        # 给每个设备都加上一个hash表类型的成员。这里的设备是ps的列表。
+        # 也就是这里给每个ps上都加上了一个hash表。
+        # 这里用with实际上就是在对应的ps上建了这个表。worker上其实没有这个表。
+        # 读写这个变量的时候会自动去相应的ps上查找，网络传输都是tf自动实现的。
         for idx in range(len(self.devices)):
           with ops.device(self.devices[idx]):
             mht = None
@@ -336,7 +340,9 @@ class Variable(trackable.TrackableResource):
                                           self.shard_num)
 
     ops_ = []
+    # 所有的更新操作最终都落实到insert函数上。
     for idx in range(len(self.devices)):
+      # 这里区分到了某个ps上。
       with ops.device(self.devices[idx]):
         ops_.append(self._tables[idx].insert(keys_partitions[idx],
                                              values_partitions[idx],
@@ -505,6 +511,7 @@ class Variable(trackable.TrackableResource):
                                                  self.value_dtype)
 
         ops_ = None
+        # 找到第idx个设备的hash表。
         ops_ = self._tables[idx].lookup(
             keys_partitions[idx],
             dynamic_default_values=dynamic_default_values,

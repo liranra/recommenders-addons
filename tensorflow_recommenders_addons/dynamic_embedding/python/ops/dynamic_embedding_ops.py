@@ -46,6 +46,8 @@ from tensorflow.python.util import compat
 from tensorflow.python.util.tf_export import tf_export
 
 
+# 这个Wrapper封装了Variable，利用Variable这个结构实现的一些接口
+# 可以用于前向和后向计算。
 class TrainableWrapper(resource_variable_ops.ResourceVariable):
   """
     This class is a trainable wrapper of Dynamic Embedding,
@@ -75,12 +77,14 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
         Returns:
           A `TrainableWrapper` object which is a subclass of ResourceVariable.
         """
+    # 这里进行初始化，只是设置了几个变量。
     self.params = params
     self.ids = ids
     self.max_norm = max_norm
     self.prefetch_values_op = None
     self.model_mode = kwargs.get("model_mode")
     kwargs.pop("model_mode")
+    # 执行父类的初始化函数。
     super(TrainableWrapper, self).__init__(*args, **kwargs)
 
   def prefetch_values(self):
@@ -88,6 +92,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
       self.prefetch_values_op = self.transform(self.params.lookup(self.ids))
     return self.prefetch_values_op
 
+  # 这个函数父类初始化的时候会调用，
   def _init_from_args(
       self,
       initial_value=None,
@@ -168,6 +173,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
         trainable,
     ) = variables.validate_synchronization_aggregation_trainable(
         synchronization, aggregation, trainable, name)
+    # 一堆类型检查。
     if initial_value is None:
       raise ValueError("initial_value must be specified.")
     init_from_fn = callable(initial_value)
@@ -198,6 +204,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
 
     if trainable and ops.GraphKeys.TRAINABLE_VARIABLES not in collections:
       collections = list(collections) + [ops.GraphKeys.TRAINABLE_VARIABLES]
+    # 正式代码。
     with ops.init_scope():
       self._in_graph_mode = not context.executing_eagerly()
       with ops.name_scope(name, "TrainableWrapper",
@@ -341,6 +348,8 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
       )
 
   def update_op(self):
+    # 这里调用了Variable的upsert函数，
+    # upsert之前先调用了read_value
     update_param_op = self.params.upsert(self.ids, self.read_value(False))
     if self.params.restrict_policy is not None:
       update_status_op = self.params.restrict_policy.apply_update(self.ids)
@@ -350,6 +359,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
   def size(self):
     return self.params.size()
 
+  # 这里读取数据
   def _read_variable_op(self, do_prefetch=True):
     resource_variable_ops.variable_accessed(self)
     if self.model_mode == "train":
@@ -376,6 +386,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
     result = self.transform(_result)
     return result
 
+  # 这里读取数据值
   def read_value(self, do_prefetch=True):
     """Constructs an op which reads the value of this variable.
 
@@ -456,6 +467,7 @@ def embedding_lookup(
         A TrainableWrapper object used to fill the Optimizers `var_list`
           Only provided if `return_trainable` is True.
     """
+  # 这里是一堆检查
   if isinstance(params, (list, tuple)) and len(params) > 1:
     raise ValueError("Only one params is allowed.")
   if isinstance(params, (list, tuple)):
@@ -467,10 +479,13 @@ def embedding_lookup(
         "params.key_dtype should be same with ids.dtype: {} vs. {}".format(
             params.key_dtype, ids.dtype))
 
+  # 这里形成了一个名称。
   scope = variable_scope.get_variable_scope()
   full_name = scope.name + "/" if scope.name else ""
   full_name += (name + "/") if name else "embedding_lookup/"
+  # 这里的所有op都有了一个full_name前缀
   with ops.name_scope(full_name):
+    # 执行这样一个op，
     ids = ops.convert_to_tensor(ids, name="ids")
     if ids.get_shape().is_fully_defined():
       # use static shape
@@ -494,6 +509,11 @@ def embedding_lookup(
       collections = [ops.GraphKeys.LOCAL_VARIABLES]
       if params.trainable:
         collections += [ops.GraphKeys.TRAINABLE_VARIABLES]
+      # 第一个参数，传入的dynamic_embedding.Variable。
+      # 第二个参数，none。
+      # 第三个参数，是一个函数，用于初始化一个Tensor。
+      # collections=[ops.GraphKeys.LOCAL_VARIABLES, ops.GraphKeys.TRAINABLE_VARIABLES]
+      # model_mode  默认是trian
       trainable_ = de.TrainableWrapper(params,
                                        ids,
                                        max_norm=max_norm,

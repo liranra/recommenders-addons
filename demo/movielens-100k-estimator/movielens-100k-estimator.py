@@ -28,6 +28,7 @@ def input_fn():
   shuffled = ratings.shuffle(1_000_000,
                              seed=2021,
                              reshuffle_each_iteration=False)
+  # 这里shuffle完成后每次取256个样本。
   dataset = shuffled.batch(256)
   return dataset
 
@@ -35,6 +36,7 @@ def input_fn():
 def model_fn(features, labels, mode, params):
   embedding_size = 32
   movie_id = features["movie_id"]
+  # 这里是一个Tensor，一维，但是不知道长度是多少。
   user_id = features["user_id"]
   rating = features["user_rating"]
 
@@ -61,12 +63,14 @@ def model_fn(features, labels, mode, params):
       devices=ps_list,
       initializer=initializer)
 
+  # 把很多个uid组成一个list，再去重
   user_id_val, user_id_idx = tf.unique(tf.concat(user_id, axis=0))
   user_id_weights, user_id_trainable_wrapper = tfra.dynamic_embedding.embedding_lookup(
       params=user_embeddings,
       ids=user_id_val,
       name="user-id-weights",
       return_trainable=True)
+  # 根据索引获取到很多个用户的embedding，这里把所有的都取出来了。
   user_id_weights = tf.gather(user_id_weights, user_id_idx)
 
   movie_id_val, movie_id_idx = tf.unique(tf.concat(movie_id, axis=0))

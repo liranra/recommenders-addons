@@ -193,6 +193,8 @@ struct LaunchTensorsAccum<CPUDevice, K, V> {
 template <class K, class V>
 class CuckooHashTableOfTensors final : public LookupInterface {
  public:
+  //  table成员是这个类型。它实现了LookupInterface。
+  //  并且在构造函数里创建了table_成员。这里只需要实现父类的几个成员就可以了。
   CuckooHashTableOfTensors(OpKernelContext* ctx, OpKernel* kernel) {
     int64 env_var = 0;
     int64 init_size = 0;
@@ -304,6 +306,10 @@ class CuckooHashTableOfTensors final : public LookupInterface {
     return table_->export_values(ctx, value_dim);
   }
 
+  Status ExportHotValues(OpKernelContext* ctx) {
+    return table_->export_hot_values(ctx);
+  }
+
   DataType key_dtype() const override { return DataTypeToEnum<K>::v(); }
 
   DataType value_dtype() const override { return DataTypeToEnum<V>::v(); }
@@ -361,6 +367,8 @@ class HashTableOpKernel : public OpKernel {
     return Status::OK();
   }
 
+  //  table应该是被保存在ctx里面，这里通过名称获取到handel，然后根据handel的信息用
+  //  resource_manager查找到table。
   Status GetResourceHashTable(StringPiece input_name, OpKernelContext* ctx,
                               LookupInterface** table) {
     const Tensor* handle_tensor;
@@ -490,6 +498,7 @@ class HashTableRemoveOp : public HashTableOpKernel {
 
   void Compute(OpKernelContext* ctx) override {
     LookupInterface* table;
+    // GetTable这个函数是父类的
     OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
     core::ScopedUnref unref_me(table);
 
@@ -596,6 +605,19 @@ class HashTableSizeOp : public HashTableOpKernel {
 // Op that outputs tensors of all keys and all values.
 class HashTableExportOp : public HashTableOpKernel {
  public:
+  using HashTableOpKernel::HashTableOpKernel;
+
+  void Compute(OpKernelContext* ctx) override {
+    LookupInterface* table;
+    OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
+    core::ScopedUnref unref_me(table);
+
+    OP_REQUIRES_OK(ctx, table->ExportValues(ctx));
+  }
+};
+
+class HashTableExportHotOp : public HashTableOpKernel {
+  public:
   using HashTableOpKernel::HashTableOpKernel;
 
   void Compute(OpKernelContext* ctx) override {

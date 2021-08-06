@@ -129,6 +129,7 @@ class TableWrapperBase {
   virtual void clear() {}
   virtual bool erase(const K& key) {}
   virtual Status export_values(OpKernelContext* ctx, int64 value_dim) {}
+  virtual Status export_hot_values(OpKernelContext* ctx) {}
 };
 
 template <class K, class V, size_t DIM>
@@ -136,13 +137,19 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
  private:
   using ValueType = ValueArray<V, DIM>;
   using Table = cuckoohash_map<K, ValueType, HybridHash<K>>;
+  using Hot_Key_Table = cuckoohash_map<K, int, HybridHash<K>>;
 
  public:
   explicit TableWrapperOptimized(size_t init_size) : init_size_(init_size) {
     table_ = new Table(init_size);
+    hot_key_table_ = new Hot_Key_Table(init_size);
     LOG(INFO) << "HashTable on CPU is created on optimized mode:"
               << " K=" << std::type_index(typeid(K)).name()
               << ", V=" << std::type_index(typeid(V)).name() << ", DIM=" << DIM
+              << ", init_size=" << init_size_;
+    LOG(INFO) << "Hot Key HashTable on CPU is created on optimized mode:"
+              << " K=" << std::type_index(typeid(K)).name()
+              << ", V=int" << ", DIM=" << DIM
               << ", init_size=" << init_size_;
   }
 
@@ -155,6 +162,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
       V value = value_flat(index, j);
       value_vec[j] = value;
     }
+    hot_key_table_->insert_or_assign(key, 1);
     return table_->insert_or_assign(key, value_vec);
   }
 
@@ -164,6 +172,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
     for (int64 j = 0; j < value_dim; j++) {
       value_or_delta_vec[j] = value_or_delta_flat(index, j);
     }
+    hot_key_table_->insert_or_assign(key, 1);
     return table_->insert_or_accum(key, value_or_delta_vec, exist);
   }
 
@@ -181,6 +190,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
+    hot_key_table_->insert_or_assign(key, 1);
   }
 
   void find(const K& key, Tensor2D<V>& value_flat,
@@ -198,6 +208,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
+    hot_key_table_->insert_or_assign(key, 1);
   }
 
   size_t size() const override { return table_->size(); }
@@ -232,9 +243,34 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
     return Status::OK();
   }
 
+  Status export_hot_values(OpKernelContext* ctx) override {
+    auto lt = hot_key_table_->lock_table();
+    int64 size = lt.size();
+
+    Tensor* keys;
+    Tensor* values;
+    TF_RETURN_IF_ERROR(
+      ctx->allocate_output("hot_keys", TensorShape({size}), &keys));
+    TF_RETURN_IF_ERROR(ctx->allocate_output(
+      "hot_values", TensorShape({size, 1}), &values));
+
+    auto keys_data = keys->flat<K>();
+    auto values_data = values->matrix<V>();
+    int64 i = 0;
+
+    for (auto it = lt.begin(); it != lt.end(); ++it, ++i) {
+      K key = it->first;
+      int value = it->second;
+      keys_data(i) = key;
+      values_data(i, 0) = value;
+    }
+    return Status::OK();
+  }
+
  private:
   size_t init_size_;
   Table* table_;
+  Hot_Key_Table* hot_key_table_;
 };
 
 template <class K, class V>
@@ -366,6 +402,7 @@ struct TableDispatcher {
       typename TableDispatcherImpl<K, V, DIM, OPTIMIZED>::table_type;
 };
 
+// 这里有个判断。所以最终只会创建对应dim的table
 #define CREATE_A_TABLE(DIM)                                                \
   do {                                                                     \
     if (runtime_dim == (DIM + 1)) {                                        \
@@ -397,6 +434,7 @@ struct TableDispatcher {
   } while (0)
 
 // create branches with dim range [1, 100]
+// 这里两个参数基本的都是0。然后执行了十次。
 #define CREATE_TABLE_ALL_BRANCHES(CENTILE, DECTILE)          \
   CREATE_TABLE_PARTIAL_BRANCHES(CENTILE * 10 + DECTILE + 0); \
   CREATE_TABLE_PARTIAL_BRANCHES(CENTILE * 10 + DECTILE + 1); \
@@ -410,11 +448,13 @@ struct TableDispatcher {
   CREATE_TABLE_PARTIAL_BRANCHES(CENTILE * 10 + DECTILE + 9); \
   CREATE_DEFAULT_TABLE();
 
+//  这里又执行了CREATE_TABLE_ALL_BRANCHES
 template <class K, class V, int CENTILE, int DECTILE>
 void CreateTableImpl(TableWrapperBase<K, V>** pptable, size_t init_size,
                      size_t runtime_dim) {
   CREATE_TABLE_ALL_BRANCHES(CENTILE, DECTILE);
 }
+
 
 #define DEFINE_CREATE_TABLE(K, V, CENTILE, DECTILE)                           \
   void CreateTable(size_t init_size, size_t runtime_dim,                      \
@@ -422,6 +462,7 @@ void CreateTableImpl(TableWrapperBase<K, V>** pptable, size_t init_size,
     CreateTableImpl<K, V, CENTILE, DECTILE>(pptable, init_size, runtime_dim); \
   }
 
+//  这里声明函数
 #define DECLARE_CREATE_TABLE(K, V)                       \
   void CreateTable(size_t init_size, size_t runtime_dim, \
                    TableWrapperBase<K, V>** pptable)

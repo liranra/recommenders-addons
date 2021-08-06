@@ -38,6 +38,7 @@ from tensorflow.python.training import optimizer
 from tensorflow.python.training import slot_creator
 
 
+# 这是个函数，
 def DynamicEmbeddingOptimizer(self):
   """ An optimizer wrapper to make any TensorFlow optimizer capable of training
   Dynamic Embeddding Variables.

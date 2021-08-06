@@ -215,6 +215,7 @@ class EmbeddingVariable(resource_variable_ops.ResourceVariable,
     elif isinstance(embedding_dim, six.integer_types):
       embedding_shape = [embedding_dim]
 
+    #
     initial_value = initializer(shape=embedding_shape)
     init_from_fn = callable(initial_value)
     if ktype is None:
