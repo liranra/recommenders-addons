@@ -307,6 +307,7 @@ class CuckooHashTableOfTensors final : public LookupInterface {
   }
 
   Status ExportHotValues(OpKernelContext* ctx) {
+    LOG(INFO) << "excute ExportHotValues";
     return table_->export_hot_values(ctx);
   }
 
@@ -491,20 +492,6 @@ class HashTableInsertOp : public HashTableOpKernel {
   }
 };
 
-class HashTableExportHotKeyOp : public HashTableOpKernel {
-  public:
-  using HashTableOpKernel::HashTableOpKernel;
-
-  void Compute(OpKernelContext* ctx) override {
-    LookupInterface* table;
-    OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
-    core::ScopedUnref unref_me(table);
-    OP_REQUIRES_OK(ctx, dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table)->
-      ExportHotValues(ctx));
-    LOG(INFO) << "export hot key,key siez:";
-  }
-};
-
 // Table remove op.
 class HashTableRemoveOp : public HashTableOpKernel {
  public:
@@ -630,7 +617,7 @@ class HashTableExportOp : public HashTableOpKernel {
   }
 };
 
-class HashTableExportHotOp : public HashTableOpKernel {
+class HashTableExportHotKeyOp : public HashTableOpKernel {
   public:
   using HashTableOpKernel::HashTableOpKernel;
 
@@ -638,8 +625,11 @@ class HashTableExportHotOp : public HashTableOpKernel {
     LookupInterface* table;
     OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
     core::ScopedUnref unref_me(table);
-
-    OP_REQUIRES_OK(ctx, table->ExportValues(ctx));
+    LOG(INFO) << "get hot table:";
+    auto p = dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table);
+    LOG(INFO) << "excute hot key:";
+    OP_REQUIRES_OK(ctx, p->ExportHotValues(ctx));
+    LOG(INFO) << "end hot key:";
   }
 };
 
