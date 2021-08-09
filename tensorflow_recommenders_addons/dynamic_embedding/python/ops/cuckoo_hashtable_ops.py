@@ -341,6 +341,23 @@ class CuckooHashTable(LookupInterface):
             self.resource_handle, self._key_dtype, self._value_dtype)
     return keys, values
 
+  def export_hot_values(self, name=None):
+    """Returns tensors of all keys and values in the table.
+
+        Args:
+          name: A name for the operation (optional).
+
+        Returns:
+          A pair of tensors with the first tensor containing all keys and the
+            second tensors containing all values in the table.
+        """
+    with ops.name_scope(name, "%s_lookup_table_export_hot_values" % self.name,
+                        [self.resource_handle]):
+      with ops.colocate_with(self.resource_handle):
+        keys, values = cuckoo_ops.tfra_cuckoo_hash_table_export_hot_key(
+          self.resource_handle, self._key_dtype, self._value_dtype)
+    return keys, values
+
   def _gather_saveables_for_checkpoint(self):
     """For object-based checkpointing."""
     # full_name helps to figure out the name-based Saver's name

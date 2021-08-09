@@ -514,6 +514,7 @@ class HashTableExportHotKeyOp : public HashTableOpKernel {
     }
     OP_REQUIRES_OK(ctx, dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table)->
       ExportHotValues(ctx));
+    LOG(INFO) << "export hot key,key siez:";
 
     if (ctx->track_allocations()) {
       ctx->record_persistent_memory_allocation(table->MemoryUsed() -
@@ -697,8 +698,8 @@ REGISTER_KERNEL_BUILDER(
     Name(PREFIX_OP_NAME(CuckooHashTableInsert)).Device(DEVICE_CPU),
     HashTableInsertOp);
 REGISTER_KERNEL_BUILDER(
-  Name(PREFIX_OP_NAME(CuckooHashTableExportHotKey)).Device(DEVICE_CPU),
-  HashTableExportHotKeyOp);
+    Name(PREFIX_OP_NAME(CuckooHashTableExportHotKey)).Device(DEVICE_CPU),
+    HashTableExportHotKeyOp);
 REGISTER_KERNEL_BUILDER(
     Name(PREFIX_OP_NAME(CuckooHashTableRemove)).Device(DEVICE_CPU),
     HashTableRemoveOp);

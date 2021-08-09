@@ -551,6 +551,27 @@ class Variable(trackable.TrackableResource):
         full_values.append(vals_)
     return array_ops.concat(full_keys, 0), array_ops.concat(full_values, 0)
 
+  def export_hot_values(self, name=None):
+    """Returns tensors of all keys and values in the table.
+
+        Args:
+          name: A name for the operation (optional).
+
+        Returns:
+          A pair of tensors with the first tensor containing all keys and the
+            second tensors containing all values in the table.
+        """
+    full_keys = []
+    full_values = []
+    for idx in range(len(self.devices)):
+      keys_ = None
+      vals_ = None
+      with ops.device(self.devices[idx]):
+        keys_, vals_ = self._tables[idx].export_hot_values(name=name)
+        full_keys.append(keys_)
+        full_values.append(vals_)
+    return array_ops.concat(full_keys, 0), array_ops.concat(full_values, 0)
+
   def size(self, index=None, name=None):
     """Compute the number of elements in the index-th table of this Variable.
 
