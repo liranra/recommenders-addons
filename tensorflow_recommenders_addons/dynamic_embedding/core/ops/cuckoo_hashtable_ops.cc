@@ -194,20 +194,6 @@ REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableInsert))
       return Status::OK();
     });
 
-REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableExportHotKey))
-  .Input("table_handle: resource")
-  .Input("keys: Tin")
-  .Input("values: Tout")
-  .Attr("Tin: type")
-  .Attr("Tout: type")
-  .SetShapeFn([](InferenceContext* c) {
-    ShapeHandle handle;
-    TF_RETURN_IF_ERROR(c->WithRank(c->input(0), 0, &handle));
-
-    // TODO: Validate keys and values shape.
-    return Status::OK();
-  });
-
 REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableAccum))
     .Input("table_handle: resource")
     .Input("keys: key_dtype")
@@ -267,6 +253,28 @@ REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableExport))
       c->set_output(1, value_shape_and_type.shape);
       return Status::OK();
     });
+
+REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableExportHotKey))
+  .Input("table_handle: resource")
+  .Output("keys: Tkeys")
+  .Output("values: Tvalues")
+  .Attr("Tkeys: type")
+  .Attr("Tvalues: type")
+  .SetShapeFn([](InferenceContext* c) {
+    ShapeHandle handle;
+    TF_RETURN_IF_ERROR(c->WithRank(c->input(0), 0, &handle));
+    ShapeHandle keys = c->UnknownShapeOfRank(1);
+    ShapeAndType value_shape_and_type;
+    TF_RETURN_IF_ERROR(ValidateTableResourceHandle(
+      c,
+      /*keys=*/keys,
+      /*key_dtype_attr=*/"Tkeys",
+      /*value_dtype_attr=*/"Tvalues",
+      /*is_lookup=*/false, &value_shape_and_type));
+    c->set_output(0, keys);
+    c->set_output(1, value_shape_and_type.shape);
+    return Status::OK();
+  });
 
 REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableImport))
     .Input("table_handle: resource")
