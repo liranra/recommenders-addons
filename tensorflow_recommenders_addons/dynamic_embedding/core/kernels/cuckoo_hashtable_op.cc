@@ -514,6 +514,7 @@ class HashTableExportHotKeyOp : public HashTableOpKernel {
     }
     OP_REQUIRES_OK(ctx, dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table)->
       ExportHotValues(ctx));
+
     if (ctx->track_allocations()) {
       ctx->record_persistent_memory_allocation(table->MemoryUsed() -
                                                memory_used_before);
