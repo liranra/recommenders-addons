@@ -499,27 +499,9 @@ class HashTableExportHotKeyOp : public HashTableOpKernel {
     LookupInterface* table;
     OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
     core::ScopedUnref unref_me(table);
-
-    DataTypeVector expected_inputs = {expected_input_0_, table->key_dtype(),
-                                      table->value_dtype()};
-    OP_REQUIRES_OK(ctx, ctx->MatchSignature(expected_inputs, {}));
-
-    const Tensor& keys = ctx->input(1);
-    const Tensor& values = ctx->input(2);
-    OP_REQUIRES_OK(ctx, table->CheckKeyAndValueTensorsForInsert(keys, values));
-
-    int64 memory_used_before = 0;
-    if (ctx->track_allocations()) {
-      memory_used_before = table->MemoryUsed();
-    }
     OP_REQUIRES_OK(ctx, dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table)->
       ExportHotValues(ctx));
     LOG(INFO) << "export hot key,key siez:";
-
-    if (ctx->track_allocations()) {
-      ctx->record_persistent_memory_allocation(table->MemoryUsed() -
-                                               memory_used_before);
-    }
   }
 };
 
