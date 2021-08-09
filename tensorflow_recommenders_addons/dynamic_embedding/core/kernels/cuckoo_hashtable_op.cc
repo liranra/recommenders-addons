@@ -491,6 +491,36 @@ class HashTableInsertOp : public HashTableOpKernel {
   }
 };
 
+class HashTableExportHotKeyOp : public HashTableOpKernel {
+  public:
+  using HashTableOpKernel::HashTableOpKernel;
+
+  void Compute(OpKernelContext* ctx) override {
+    LookupInterface* table;
+    OP_REQUIRES_OK(ctx, GetTable(ctx, &table));
+    core::ScopedUnref unref_me(table);
+
+    DataTypeVector expected_inputs = {expected_input_0_, table->key_dtype(),
+                                      table->value_dtype()};
+    OP_REQUIRES_OK(ctx, ctx->MatchSignature(expected_inputs, {}));
+
+    const Tensor& keys = ctx->input(1);
+    const Tensor& values = ctx->input(2);
+    OP_REQUIRES_OK(ctx, table->CheckKeyAndValueTensorsForInsert(keys, values));
+
+    int64 memory_used_before = 0;
+    if (ctx->track_allocations()) {
+      memory_used_before = table->MemoryUsed();
+    }
+    OP_REQUIRES_OK(ctx, dynamic_cast<lookup::CuckooHashTableOfTensors<class K, class V>*>(table)->
+      ExportHotValues(ctx));
+    if (ctx->track_allocations()) {
+      ctx->record_persistent_memory_allocation(table->MemoryUsed() -
+                                               memory_used_before);
+    }
+  }
+};
+
 // Table remove op.
 class HashTableRemoveOp : public HashTableOpKernel {
  public:
@@ -665,6 +695,9 @@ REGISTER_KERNEL_BUILDER(
 REGISTER_KERNEL_BUILDER(
     Name(PREFIX_OP_NAME(CuckooHashTableInsert)).Device(DEVICE_CPU),
     HashTableInsertOp);
+REGISTER_KERNEL_BUILDER(
+  Name(PREFIX_OP_NAME(CuckooHashTableExportHotKey)).Device(DEVICE_CPU),
+  HashTableExportHotKeyOp);
 REGISTER_KERNEL_BUILDER(
     Name(PREFIX_OP_NAME(CuckooHashTableRemove)).Device(DEVICE_CPU),
     HashTableRemoveOp);
