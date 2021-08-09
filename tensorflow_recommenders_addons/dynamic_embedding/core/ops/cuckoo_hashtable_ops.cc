@@ -194,7 +194,7 @@ REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableInsert))
       return Status::OK();
     });
 
-REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableInsert))
+REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableExportHotKey))
   .Input("table_handle: resource")
   .Input("keys: Tin")
   .Input("values: Tout")
