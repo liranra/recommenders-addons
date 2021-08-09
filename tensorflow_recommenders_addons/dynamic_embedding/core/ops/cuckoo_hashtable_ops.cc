@@ -194,6 +194,20 @@ REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableInsert))
       return Status::OK();
     });
 
+REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableInsert))
+  .Input("table_handle: resource")
+  .Input("keys: Tin")
+  .Input("values: Tout")
+  .Attr("Tin: type")
+  .Attr("Tout: type")
+  .SetShapeFn([](InferenceContext* c) {
+    ShapeHandle handle;
+    TF_RETURN_IF_ERROR(c->WithRank(c->input(0), 0, &handle));
+
+    // TODO: Validate keys and values shape.
+    return Status::OK();
+  });
+
 REGISTER_OP(PREFIX_OP_NAME(CuckooHashTableAccum))
     .Input("table_handle: resource")
     .Input("keys: key_dtype")
