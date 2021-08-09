@@ -129,7 +129,6 @@ class TableWrapperBase {
   virtual void clear() {}
   virtual bool erase(const K& key) {}
   virtual Status export_values(OpKernelContext* ctx, int64 value_dim) {}
-  virtual Status export_hot_values(OpKernelContext* ctx) {}
 };
 
 template <class K, class V, size_t DIM>
