@@ -130,8 +130,6 @@ class VariableTest(test.TestCase):
           _convert(result, value_dtype))
 
         exported_keys, exported_values = table.export()
-
-        hot_exported_keys, hot_exported_values = table.export_hot_values()
         # exported data is in the order of the internal map, i.e. undefined
         sorted_keys = np.sort(self.evaluate(exported_keys))
         sorted_values = np.sort(self.evaluate(exported_values), axis=0)
@@ -140,6 +138,12 @@ class VariableTest(test.TestCase):
         self.assertAllEqual(
           _convert([[0] * dim, [2] * dim, [3] * dim], value_dtype),
           _convert(sorted_values, value_dtype))
+
+        hot_exported_keys, hot_exported_values = table.export_hot_values()
+        sorted_keys = np.sort(self.evaluate(hot_exported_keys))
+        sorted_values = np.sort(self.evaluate(hot_exported_values), axis=0)
+        print(sorted_keys)
+        print(sorted_values)
 
         del table
 
