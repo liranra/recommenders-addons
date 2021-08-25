@@ -501,7 +501,7 @@ struct TableDispatcher {
   CREATE_TABLE_PARTIAL_BRANCHES(CENTILE * 10 + DECTILE + 9); \
   CREATE_DEFAULT_TABLE();
 
-//  这里又执行了CREATE_TABLE_ALL_BRANCHES
+//  定义之后
 template <class K, class V, int CENTILE, int DECTILE>
 void CreateTableImpl(TableWrapperBase<K, V>** pptable, size_t init_size,
                      size_t runtime_dim) {
@@ -509,6 +509,8 @@ void CreateTableImpl(TableWrapperBase<K, V>** pptable, size_t init_size,
 }
 
 
+// 有了声明以后进行定义，定义以后执行了调用，kv的类型是预先定义好的。CENTILE, DECTILE也是预先定义好的。
+// 如果这俩值都是0，
 #define DEFINE_CREATE_TABLE(K, V, CENTILE, DECTILE)                           \
   void CreateTable(size_t init_size, size_t runtime_dim,                      \
                    TableWrapperBase<K, V>** pptable) {                        \
