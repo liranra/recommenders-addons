@@ -303,6 +303,7 @@ class CuckooHashTableOfTensors final : public LookupInterface {
 
   Status ExportValues(OpKernelContext* ctx) override {
     int64 value_dim = value_shape_.dim_size(0);
+      LOG(INFO) << "excute ExportValues";
     return table_->export_values(ctx, value_dim);
   }
 
