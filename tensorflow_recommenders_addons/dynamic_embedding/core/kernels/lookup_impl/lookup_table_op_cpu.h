@@ -162,7 +162,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
       V value = value_flat(index, j);
       value_vec[j] = value;
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
     return table_->insert_or_assign(key, value_vec);
   }
 
@@ -172,7 +172,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
     for (int64 j = 0; j < value_dim; j++) {
       value_or_delta_vec[j] = value_or_delta_flat(index, j);
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
     return table_->insert_or_accum(key, value_or_delta_vec, exist);
   }
 
@@ -190,7 +190,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
   }
 
   void find(const K& key, Tensor2D<V>& value_flat,
@@ -208,7 +208,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
   }
 
   size_t size() const override { return table_->size(); }
@@ -312,7 +312,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
       V value = value_flat(index, j);
       value_vec.push_back(value);
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
     return table_->insert_or_assign(key, value_vec);
   }
 
@@ -322,7 +322,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
     for (int64 j = 0; j < value_dim; j++) {
       value_or_delta_vec.push_back(value_or_delta_flat(index, j));
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
     return table_->insert_or_accum(key, value_or_delta_vec, exist);
   }
 
@@ -340,7 +340,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
   }
 
   void find(const K& key, typename tensorflow::TTypes<V, 2>::Tensor& value_flat,
@@ -358,7 +358,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_accum(key, 1);
+    hot_key_table_->insert_or_accum(key, 1, false);
   }
 
   size_t size() const override { return table_->size(); }
