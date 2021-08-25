@@ -65,6 +65,7 @@ def model_fn(features, labels, mode, params):
 
   # 把很多个uid组成一个list，再去重
   user_id_val, user_id_idx = tf.unique(tf.concat(user_id, axis=0))
+  # 前面获取了variable之后，被放在TrainableWrapper封装一下，再返回。
   user_id_weights, user_id_trainable_wrapper = tfra.dynamic_embedding.embedding_lookup(
       params=user_embeddings,
       ids=user_id_val,

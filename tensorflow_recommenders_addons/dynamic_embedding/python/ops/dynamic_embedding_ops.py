@@ -46,8 +46,11 @@ from tensorflow.python.util import compat
 from tensorflow.python.util.tf_export import tf_export
 
 
-# 这个Wrapper封装了Variable，利用Variable这个结构实现的一些接口
-# 可以用于前向和后向计算。
+# 这里封装了Variable，实现了父类的几个接口，以至于让Variable可以被训练。
+# 同时这里也可以被转换成Tensor，也就是embedding。
+# 这里配合优化器的实现，让这个Variable可以被训练。
+# 对外暴露一共就俩接口。这俩接口内部调用了Variable的接口，Variable进行了partition，把op分到不同的节点上执行。
+# 返回多个op以后，被串在一起执行。op执行完之后的数据交互，由tf内部自行实现。
 class TrainableWrapper(resource_variable_ops.ResourceVariable):
   """
     This class is a trainable wrapper of Dynamic Embedding,
@@ -267,6 +270,7 @@ class TrainableWrapper(resource_variable_ops.ResourceVariable):
             with ops.name_scope("Assign") as n, ops.colocate_with(
                 None, ignore_existing=True), ops.device(handle.device):
               # pylint: disable=protected-access
+              # gen_resource_variable_ops是tf自带的一组op，作用是根据handle对variable进行初始化，读取的操作。
               initializer_op = gen_resource_variable_ops.assign_variable_op(
                   handle,
                   variables._try_guard_against_uninitialized_dependencies(

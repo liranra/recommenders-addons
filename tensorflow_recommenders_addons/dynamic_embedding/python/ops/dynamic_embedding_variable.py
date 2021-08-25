@@ -350,6 +350,8 @@ class Variable(trackable.TrackableResource):
 
     return control_flow_ops.group(ops_)
 
+  # 这些修改table的操作，都是先进行partition，然后分到具体的device上进行。
+  # 但是这个函数不知道哪里被用到。
   def accum(self, keys, old_values, new_values, exists, name=None):
     """
     Insert `keys` with `values` if not exist, or accumulate a delta value
@@ -606,6 +608,8 @@ class Variable(trackable.TrackableResource):
     return saveables
 
 
+# 这相当于每个实例上都有这个variable
+# 但是这个variable里面是不是需要初始化hashTable就不一定了
 @tf_export("dynamic_embedding.get_variable")
 def get_variable(
     name,  # unique

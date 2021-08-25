@@ -129,6 +129,7 @@ class TableWrapperBase {
   virtual void clear() {}
   virtual bool erase(const K& key) {}
   virtual Status export_values(OpKernelContext* ctx, int64 value_dim) {}
+  virtual Status export_hot_values(OpKernelContext* ctx) {}
 };
 
 template <class K, class V, size_t DIM>
@@ -161,7 +162,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
       V value = value_flat(index, j);
       value_vec[j] = value;
     }
-    hot_key_table_->insert_or_assign(key, 1);
+    hot_key_table_->insert_or_accum(key, 1);
     return table_->insert_or_assign(key, value_vec);
   }
 
@@ -171,7 +172,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
     for (int64 j = 0; j < value_dim; j++) {
       value_or_delta_vec[j] = value_or_delta_flat(index, j);
     }
-    hot_key_table_->insert_or_assign(key, 1);
+    hot_key_table_->insert_or_accum(key, 1);
     return table_->insert_or_accum(key, value_or_delta_vec, exist);
   }
 
@@ -189,7 +190,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_assign(key, 1);
+    hot_key_table_->insert_or_accum(key, 1);
   }
 
   void find(const K& key, Tensor2D<V>& value_flat,
@@ -207,14 +208,20 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
-    hot_key_table_->insert_or_assign(key, 1);
+    hot_key_table_->insert_or_accum(key, 1);
   }
 
   size_t size() const override { return table_->size(); }
 
-  void clear() override { table_->clear(); }
+  void clear() override {
+    hot_key_table_->clear();
+    table_->clear();
+  }
 
-  bool erase(const K& key) override { return table_->erase(key); }
+  bool erase(const K& key) override {
+    hot_key_table_->erase(key);
+    return table_->erase(key);
+  }
 
   Status export_values(OpKernelContext* ctx, int64 value_dim) override {
     auto lt = table_->lock_table();
@@ -280,11 +287,17 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
  private:
   using ValueType = DefaultValueArray<V, 2>;
   using Table = cuckoohash_map<K, ValueType, HybridHash<K>>;
+  using Hot_Key_Table = cuckoohash_map<K, int, HybridHash<K>>;
 
  public:
   explicit TableWrapperDefault(size_t init_size) : init_size_(init_size) {
     table_ = new Table(init_size);
+    hot_key_table_ = new Hot_Key_Table(init_size);
     LOG(INFO) << "HashTable on CPU is created on default mode:"
+              << " K=" << std::type_index(typeid(K)).name()
+              << ", V=" << std::type_index(typeid(V)).name()
+              << ", init_size=" << init_size_;
+    LOG(INFO) << "Hot Key HashTable on CPU is created on default mode:"
               << " K=" << std::type_index(typeid(K)).name()
               << ", V=" << std::type_index(typeid(V)).name()
               << ", init_size=" << init_size_;
@@ -299,6 +312,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
       V value = value_flat(index, j);
       value_vec.push_back(value);
     }
+    hot_key_table_->insert_or_accum(key, 1);
     return table_->insert_or_assign(key, value_vec);
   }
 
@@ -308,6 +322,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
     for (int64 j = 0; j < value_dim; j++) {
       value_or_delta_vec.push_back(value_or_delta_flat(index, j));
     }
+    hot_key_table_->insert_or_accum(key, 1);
     return table_->insert_or_accum(key, value_or_delta_vec, exist);
   }
 
@@ -325,6 +340,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
+    hot_key_table_->insert_or_accum(key, 1);
   }
 
   void find(const K& key, typename tensorflow::TTypes<V, 2>::Tensor& value_flat,
@@ -342,13 +358,20 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
             is_full_size_default ? default_flat(index, j) : default_flat(0, j);
       }
     }
+    hot_key_table_->insert_or_accum(key, 1);
   }
 
   size_t size() const override { return table_->size(); }
 
-  void clear() override { table_->clear(); }
+  void clear() override {
+    hot_key_table_->clear();
+    table_->clear();
+  }
 
-  bool erase(const K& key) override { return table_->erase(key); }
+  bool erase(const K& key) override {
+    hot_key_table_->clear();
+    return table_->erase(key);
+  }
 
   Status export_values(OpKernelContext* ctx, int64 value_dim) override {
     auto lt = table_->lock_table();
@@ -376,9 +399,37 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
     return Status::OK();
   }
 
+  Status export_hot_values(OpKernelContext* ctx) override {
+    LOG(INFO) << "enter export_hot_values";
+    auto lt = hot_key_table_->lock_table();
+    int64 size = lt.size();
+
+    LOG(INFO) << "1111";
+    Tensor* keys;
+    Tensor* values;
+    TF_RETURN_IF_ERROR(
+      ctx->allocate_output("hot_keys", TensorShape({size}), &keys));
+    TF_RETURN_IF_ERROR(ctx->allocate_output(
+      "hot_values", TensorShape({size, 1}), &values));
+    LOG(INFO) << "222";
+    auto keys_data = keys->flat<K>();
+    auto values_data = values->matrix<int>();
+    int64 i = 0;
+    LOG(INFO) << "333";
+    for (auto it = lt.begin(); it != lt.end(); ++it, ++i) {
+      K key = it->first;
+      int value = it->second;
+      keys_data(i) = key;
+      values_data(i, 0) = value;
+    }
+    LOG(INFO) << "444";
+    return Status::OK();
+  }
+
  private:
   size_t init_size_;
   Table* table_;
+  Hot_Key_Table* hot_key_table_;
 };
 
 template <class K, class V, size_t DIM, bool OPTIMIZE>
