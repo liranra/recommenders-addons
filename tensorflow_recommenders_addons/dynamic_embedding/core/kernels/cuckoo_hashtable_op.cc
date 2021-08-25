@@ -308,8 +308,9 @@ class CuckooHashTableOfTensors final : public LookupInterface {
   }
 
   Status ExportHotValues(OpKernelContext* ctx) {
+      int64 value_dim = value_shape_.dim_size(0);
     LOG(INFO) << "excute ExportHotValues,";
-    return table_->export_hot_values(ctx);
+    return table_->export_values(ctx, value_dim);
   }
 
   DataType key_dtype() const override { return DataTypeToEnum<K>::v(); }
