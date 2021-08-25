@@ -224,6 +224,7 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
   }
 
   Status export_values(OpKernelContext* ctx, int64 value_dim) override {
+      LOG(INFO) << "enter export_values";
     auto lt = table_->lock_table();
     int64 size = lt.size();
 
@@ -374,6 +375,7 @@ class TableWrapperDefault final : public TableWrapperBase<K, V> {
   }
 
   Status export_values(OpKernelContext* ctx, int64 value_dim) override {
+      LOG(INFO) << "enter export_values";
     auto lt = table_->lock_table();
     int64 size = lt.size();
 
