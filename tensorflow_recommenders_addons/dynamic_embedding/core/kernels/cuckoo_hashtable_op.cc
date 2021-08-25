@@ -307,7 +307,7 @@ class CuckooHashTableOfTensors final : public LookupInterface {
   }
 
   Status ExportHotValues(OpKernelContext* ctx) {
-    LOG(INFO) << "excute ExportHotValues, table_:" << table_;
+    LOG(INFO) << "excute ExportHotValues,";
     return table_->export_hot_values(ctx);
   }
 
