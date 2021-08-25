@@ -247,30 +247,6 @@ class TableWrapperOptimized final : public TableWrapperBase<K, V> {
         values_data(i, j) = value.at(j);
       }
     }
-      {
-          auto lt = hot_key_table_->lock_table();
-          int64 size = lt.size();
-
-          LOG(INFO) << "1111";
-          Tensor* keys;
-          Tensor* values;
-          TF_RETURN_IF_ERROR(
-              ctx->allocate_output("hot_keys", TensorShape({size}), &keys));
-          TF_RETURN_IF_ERROR(ctx->allocate_output(
-              "hot_values", TensorShape({size, 1}), &values));
-          LOG(INFO) << "222";
-          auto keys_data = keys->flat<K>();
-          auto values_data = values->matrix<int>();
-          int64 i = 0;
-          LOG(INFO) << "333";
-          for (auto it = lt.begin(); it != lt.end(); ++it, ++i) {
-              K key = it->first;
-              int value = it->second;
-              keys_data(i) = key;
-              values_data(i, 0) = value;
-          }
-          LOG(INFO) << "444";
-      }
     return Status::OK();
   }
 
